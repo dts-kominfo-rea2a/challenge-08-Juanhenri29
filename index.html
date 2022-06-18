@@ -41,13 +41,13 @@
       // Fungsi yang digunakan untuk menambahkan tulisan
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
       function fnClickHandler(toDoItem) {
-        let mouseClick = toDoItem.pointerType
+        let mouseClick = toDoItem.type
         let tekanEnter = event.key;
 
         let tambahList = document.createElement('li');
         tambahList.innerHTML = input.value;
 
-        if (mouseClick === "mouse"){
+        if (mouseClick === "click"){
           output.append(tambahList);
           input.value = '';
         } else if (tekanEnter === "Enter"){
